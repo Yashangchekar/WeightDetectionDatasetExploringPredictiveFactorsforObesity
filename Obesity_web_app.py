@@ -8,7 +8,8 @@ Created on Thu Jan 25 08:11:32 2024
 import numpy as np
 import pickle
 import streamlit as st
-loaded_model=pickle.load(open('C:/Users/yash/Documents/Deployment/obestity/trained_model.sav','rb')) #rb read the binary format
+# loaded_model=pickle.load(open('C:/Users/yash/Documents/Deployment/obestity/trained_model.sav','rb')) #rb read the binary format
+loaded_model=pickle.load(open('trained_model.sav','rb'))
 def obesity_prediction(input_data):
     
     #changing the input_data to numpy array
